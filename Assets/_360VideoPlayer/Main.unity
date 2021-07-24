@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 6ae9a9c8e49befe4eb8de9138a3dcc85, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -94,8 +94,9 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
-    m_ShowResolutionOverlay: 1
     m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -127,10 +128,32 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 200497701347368384, guid: 7566949566c9a8c42ae6d82b9b1dafaa,
+        type: 3}
+      propertyPath: load
+      value: 
+      objectReference: {fileID: 21300000, guid: bc274d9ce4e55ba4ba2ac6fbad69c834,
+        type: 3}
+    - target: {fileID: 200497701347368384, guid: 7566949566c9a8c42ae6d82b9b1dafaa,
+        type: 3}
+      propertyPath: pause
+      value: 
+      objectReference: {fileID: 21300000, guid: 974ac122120757f43ba4f44f63aa28a0,
+        type: 3}
+    - target: {fileID: 200497701347368384, guid: 7566949566c9a8c42ae6d82b9b1dafaa,
+        type: 3}
+      propertyPath: videoManager
+      value: 
+      objectReference: {fileID: 387959600570914235}
     - target: {fileID: 200497701347368385, guid: 7566949566c9a8c42ae6d82b9b1dafaa,
         type: 3}
       propertyPath: m_Name
       value: Feedback
+      objectReference: {fileID: 0}
+    - target: {fileID: 200497701347368387, guid: 7566949566c9a8c42ae6d82b9b1dafaa,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 200497701347368387, guid: 7566949566c9a8c42ae6d82b9b1dafaa,
         type: 3}
@@ -149,6 +172,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 200497701347368387, guid: 7566949566c9a8c42ae6d82b9b1dafaa,
         type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 200497701347368387, guid: 7566949566c9a8c42ae6d82b9b1dafaa,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -161,16 +189,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 200497701347368387, guid: 7566949566c9a8c42ae6d82b9b1dafaa,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 200497701347368387, guid: 7566949566c9a8c42ae6d82b9b1dafaa,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 200497701347368387, guid: 7566949566c9a8c42ae6d82b9b1dafaa,
         type: 3}
@@ -187,11 +205,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 200497701347368384, guid: 7566949566c9a8c42ae6d82b9b1dafaa,
-        type: 3}
-      propertyPath: videoManager
-      value: 
-      objectReference: {fileID: 387959600570914235}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7566949566c9a8c42ae6d82b9b1dafaa, type: 3}
 --- !u!114 &387959600570914235 stripped
@@ -213,10 +226,43 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2212970416081037862, guid: dac5059146fac85418b8fd5401a723bb,
+    - target: {fileID: 387959600570914235, guid: dac5059146fac85418b8fd5401a723bb,
         type: 3}
-      propertyPath: m_Name
-      value: VideoManager
+      propertyPath: videos.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 387959600570914235, guid: dac5059146fac85418b8fd5401a723bb,
+        type: 3}
+      propertyPath: videos.Array.data[0]
+      value: 
+      objectReference: {fileID: 32900000, guid: ec827422adda4574a83dd7271044f5d3,
+        type: 3}
+    - target: {fileID: 387959600570914235, guid: dac5059146fac85418b8fd5401a723bb,
+        type: 3}
+      propertyPath: videos.Array.data[1]
+      value: 
+      objectReference: {fileID: 32900000, guid: 3a7222dc7ce3a8f49bec8fb0c6a95b9d,
+        type: 3}
+    - target: {fileID: 387959600570914235, guid: dac5059146fac85418b8fd5401a723bb,
+        type: 3}
+      propertyPath: videos.Array.data[2]
+      value: 
+      objectReference: {fileID: 32900000, guid: be4510ceac447124f9e3ba9a9b55757c,
+        type: 3}
+    - target: {fileID: 2212970416081037860, guid: dac5059146fac85418b8fd5401a723bb,
+        type: 3}
+      propertyPath: m_VideoClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2212970416081037860, guid: dac5059146fac85418b8fd5401a723bb,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2212970416081037861, guid: dac5059146fac85418b8fd5401a723bb,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2212970416081037861, guid: dac5059146fac85418b8fd5401a723bb,
         type: 3}
@@ -235,6 +281,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2212970416081037861, guid: dac5059146fac85418b8fd5401a723bb,
         type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2212970416081037861, guid: dac5059146fac85418b8fd5401a723bb,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -250,16 +301,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2212970416081037861, guid: dac5059146fac85418b8fd5401a723bb,
         type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2212970416081037861, guid: dac5059146fac85418b8fd5401a723bb,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2212970416081037861, guid: dac5059146fac85418b8fd5401a723bb,
-        type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
@@ -272,6 +313,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2212970416081037862, guid: dac5059146fac85418b8fd5401a723bb,
+        type: 3}
+      propertyPath: m_Name
+      value: VideoManager
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dac5059146fac85418b8fd5401a723bb, type: 3}
@@ -819,10 +865,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7200941242204553281, guid: f6c52d7514cd22142b1816fc50c85d99,
+    - target: {fileID: 867153551986465992, guid: f6c52d7514cd22142b1816fc50c85d99,
         type: 3}
-      propertyPath: m_Name
-      value: InputManager
+      propertyPath: m_RootOrder
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 867153551986465992, guid: f6c52d7514cd22142b1816fc50c85d99,
         type: 3}
@@ -841,6 +887,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 867153551986465992, guid: f6c52d7514cd22142b1816fc50c85d99,
         type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 867153551986465992, guid: f6c52d7514cd22142b1816fc50c85d99,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -853,16 +904,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 867153551986465992, guid: f6c52d7514cd22142b1816fc50c85d99,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 867153551986465992, guid: f6c52d7514cd22142b1816fc50c85d99,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 867153551986465992, guid: f6c52d7514cd22142b1816fc50c85d99,
         type: 3}
@@ -884,5 +925,10 @@ PrefabInstance:
       propertyPath: videoManager
       value: 
       objectReference: {fileID: 387959600570914235}
+    - target: {fileID: 7200941242204553281, guid: f6c52d7514cd22142b1816fc50c85d99,
+        type: 3}
+      propertyPath: m_Name
+      value: InputManager
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6c52d7514cd22142b1816fc50c85d99, type: 3}
